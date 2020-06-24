@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC 
+<head>
+<title id="titlu">Steam Mirror</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="script1.js"></script>
+<script src="index.js"></script>
+<style> 
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input[type=text]:focus {
+    width: 100%;
+  }
+  </style>
+
+<script>
+  document.getElementById("sal").click();
+  $('timpul').click();
+</script>
+
+
+</head>
+<body>
+  <footer>
+    <p class="Footer">Timp petrecut pe pagina<br>
+    <input onclick="Haida()" size="25" id="timpul" value="Timp petrecut pe pagina"></input></p>
+    <input id="userip" size="25"  value="IP User"></input>
+  </footer>
+
+<div class="wrapper">
+  <div id="inner">
+    <header class="logo">
+      
+      <h1><img class="imagine" src="images/gamestop.jpg" width="744" height="350"  /></h1>
+      <div id="nav" class="Desciere"> <a href="#">ALEGE-TI JOCUL !</a> | <a href="#">Cos cumparaturi</a> | <a href="#">Despre noi</a> </div>
+
+      <div class="login-box">
+        <!--<div class="textbox">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username"></input>
+        </div>
+      
+        <div class="textbox">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password">
+        </div>-->
+
+        <div class="capt"> 
+          <h2 type="text" id="mainCaptcha"></h2>
+          <p><input type="button" id="refresh" onclick="Captcha();"/></p>  
+          <input type="text" id="txtInput">    
+          <input id="Button1" type="button" value="Check" onclick="alert(ValidCaptcha());"/>
+        </div>
+        
+        <!--<input type="button" class="btn" value="Intra in cont">-->
+        <button onclick="myFunction()" class="btn" id="sal">Salut, utilizator ! </button>
+        <form  style="display:none" id="llogare" action="/login" method="POST">
+          <button type="submit">Intra in cont</button>
+        </form>
+        <a href="/register" >Register<br></a>
+        Varsta: <input type="text" onclick="setTimeout(getAge(), 1000)" value="Varsta" id="varsta">
+
+        <form action="/logout?_method=DELETE" method="POST">
+          <button type="submit">Log Out</button>
+          </form>
+
+        <input id="varsta2" type="text"  value="ceva"></input>
+      </header>
+
+
+    <dl id="browse">
+      <input onclick="Ascunde_imagini()" type="button" class="btn2" value="Ascunde Imagini" id="ascunde_poze"></input>
+      <dt>Selectati Platforma</dt>
+      <dd><a href="#">PC</a></dd>
+      <dd><a href="#">XBOX ONE</a></dd>
+      <dd><a href="#">XBOX 360</a></dd>
+      <dd><a href="#">PS3</a></dd>
+      <dd><a href="#">PS4</a></dd>
+      <dd><a href="#">NINTENDO SWITCH</a></dd>
+      <dd><a href="#">NINTENDO WII U</a></dd>
+      <dd><a href="#">NINTENDO WII</a></dd>
+      <dd><a href="#">NINTENDO DS</a></dd>
+      <dt>Browse For Games!</dt>
+      <dd class="searchform">
+        <form action="#" method="get">
+          <div>
+            <select name="cat">
+              <option value="-" selected="selected">CATEGORIES</option>
+              <option value="-">Action</option>
+              <option value="-">Open World</option>
+              <option value="-">Racing</option>
+              <option value="-">Sports</option>
+              <option value="-">First Person Shooter</option>
+              <option value="-">Anime based</option>
+              <option value="-">Indie</option>
+            </select>
+          </div>
+          <form>
+            <input type="text" name="search" placeholder="Search for a game..">
+          </form>
+          
+        </form>
+      </dd>
+
+      <dt>Selectati Producatorul</dt>
+      <nav>
+      <dd><a href="#">EA</a></dd>
+      <dd><a href="#">Ubisoft</a></dd>
+      <dd><a href="#">Valve</a></dd>
+      <dd><a href="#">Namco Bandai</a></dd>
+      <dd><a href="#">Bethesda</a></dd>
+      <dd><a href="#">Rockstar</a></dd>
+      <dd><a href="#">Activision Blizzard</a></dd>
+      <dd><a href="#">BioWare</a></dd>
+      <dd><a href="#">Epic Games</a></dd>
+      <dd><a href="#">Gameloft</a></dd>
+      <dd><a href="#">Blizzard Entertainment Inc</a></dd>
+      <dd><a href="#">Retro Games</a></dd>
+      <dd><a href="#">Atari</a></dd>
+      <dd><a href="#">Konami</a></dd>
+      <dd><a href="#">Square Enix</a></dd>
+      </nav>
+      <div class="clear"></div>
+      
+    </dl>
+    <article class="punem"></article>
+    <div id="body">
+      <fieldset class="CRUD">
+        <input name="name" class="yourButton" placeholder="Nume Joc">
+        <input name="img" class="yourButton" placeholder="Imagine Joc">
+        <button onclick="Post_Dog()" id="add_button" class="myButton">Add Game</button>
+        <button onclick="Edit_Dog()" id="add1_button" class="myButton">Edit Game</button>
+      </fieldset>
+      
+
+      </article>
+
+      <div class="games">
+        
+        <div class="leftbox">
+
+        </div>
+
+        <div class="rightbox">
+
+        </div>
+
+
+        <div class="rightrightbox">
+      
+
+          
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+</div>
+
+</body>
+
+</html>

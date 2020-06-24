@@ -1,0 +1,970 @@
+body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 10px;
+		text-align: center;
+		background-image: url('https://futurefive.co.nz/uploads/story/2019/06/13/Hero_image.jpg');
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		background-attachment: scroll;
+	}
+	
+    
+html, body, .wrapper, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+th, td {
+	font-size: 10px;
+}
+
+img { border: 0; }
+
+.wrapper {
+	margin: auto;
+	text-align: left;
+	width: 748px;
+	position: relative;
+}
+
+h1, h2, h3 {
+	font-size: 10px;
+}
+
+.Footer{
+	left: 119%;
+	font-size: 15px;
+	background-color: none;
+}
+
+
+#mainCaptcha{
+	position: relative;
+}
+#refresh{
+	position:relative;
+	left:120px;
+	top:0px;
+	width:90px;
+	height:90px;
+	bottom:45px;
+	background-image: url('https://i.imgur.com/K9zsoIm.png');
+	max-width:100%;
+    max-height:100%;
+}
+
+
+
+
+
+
+.login-box{
+	width: 220px;
+	position: absolute;
+	top: 80%;
+	right: 90%;
+	transform: translate(-50%,-50%);
+	border-style: ridge ;
+	color: red;
+	background-color: black;
+  }
+  .login-box h1{
+	float: right;
+	position: right;
+	font-size: 40px;
+	border-bottom: 6px solid blue;
+	margin-bottom: 20px;
+	padding: 13px 0;
+  }
+  .capt{
+	left:40%;
+
+}
+
+  .textbox{
+	float: right;
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	padding: 8px 0;
+	margin: 8px 0;
+	border-bottom: 1px solid blue;
+  }
+  .textbox i{
+	float: right;
+	width: 20px;
+	float: left;
+	text-align: center;
+  }
+  .textbox input{
+	float: right;
+	border: none;
+	outline: none;
+	background: none;
+	color: grey;
+	font-size: 18px;
+	width: 80%;
+	float: left;
+	margin: 0 10px;
+  }
+  .fas-fa-user{
+	color:red;
+  }
+  .btn{
+	float: right;
+	width: 100%;
+	background: none;
+	border: 2px solid blue;
+	color: grey;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+  }
+
+  .btn2{
+	float: right;
+	width: 100%;
+	background: none;
+	border: 2px solid red;
+	color: grey;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+  }
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  position: center;
+  margin: 5px 2px;
+  border: none;
+  cursor: pointer;
+  width: 85%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+.cumparare{
+  background-color: red;
+  color: white;
+  padding: 14px 20px;
+  position: center;
+  margin: 5px 2px;
+  border: none;
+  cursor: pointer;
+  width: 85%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+
+h1 {
+	margin: 0;
+	padding: 0;
+	margin-top: 4px solid red;
+	margin-left: 4px solid red;
+	margin-right: 4px solid red;
+	margin-bottom: 4px solid red;
+}
+
+h2 {
+	margin: 0 0 5px 0;
+	padding: 50;
+}
+
+h3 {
+	padding: 4px 0 0 0;
+}
+
+.block {
+	display: block;
+}
+
+.clear {
+	clear: both;
+	height: 2px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 3px;
+	font-size: 1px;
+}
+
+.left {
+	float: left;
+	margin: 1px 8px 0px 0px;
+}
+
+.softright {
+	text-align: right;
+}
+
+.readmore {
+	text-align: right;
+}
+
+
+
+
+.games {
+	background: black ;
+	margin-bottom: 20px;
+	margin-right: -5px;
+	display: flex;
+	width: 750px;
+	justify-content: space-between;
+	border-top: 4px solid red;
+	border-bottom: 4px solid red;
+	border-left: 4px solid red;
+	
+}
+
+.leftbox {
+	flex-grow:1;
+	float: left;
+	width: 250px;
+	
+}
+
+.rightbox {
+	top:5px;
+	border-left: 4px solid red;
+	flex-grow:1;
+	float: right;
+	width: 250px;
+	
+}
+
+.rightrightbox{
+	flex-grow:1;
+	float: right;
+	width: 250px;
+	border-left: 4px solid red;
+	border-right: 4px solid red;
+}
+
+.logo {
+	background: url(images/header_bg.gif) repeat-x;
+	position: relative;
+	width: fit-content;
+	border-left: 2px solid red;
+	border-right: 2px solid red;
+	border-bottom: 2px solid red;
+	border-top: 2px solid red;
+}
+
+.logo img {
+	display: block;
+	border-left: 4px solid red;
+	border-bottom: 4px solid red;
+	border-top: 4px solid red;
+	border-right: 4px solid red;
+	
+}
+
+
+#nav {
+	position: absolute;
+	left: 550px;
+	top: 100px;
+	width: 200px;
+}
+
+#nav, #nav a {
+	color: whitesmoke;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+}
+
+#nav, #nav a {
+	color: whitesmoke;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	text-decoration: underline;
+}
+
+
+
+#browse {
+	float: left;
+	width: 195px;
+	margin: 0;
+	padding: 0;
+	background: red ;
+}
+
+#browse dt {
+	background: rgb(0, 0, 128)  bottom repeat-x;
+	color: #6B5B95;
+	margin: 2px 2px 1px 2px;
+	padding: 6px 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+#browse dd {
+	background: rgb(0, 0, 128);
+	border-bottom: 1px solid red;
+	padding: 0;
+	margin: 0 2px;
+}
+
+#browse dd a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+	padding: 3px 22px;
+}
+
+ #browse dd {
+	padding: 3px 22px;
+	padding: 0;
+}
+
+#browse dd a {
+	display: inline;
+	display: block;
+}
+
+#browse dd a:hover {
+	background: #ff0000;
+}
+
+#browse .first {
+	padding-top: 10px;
+}
+
+#browse .last {
+	padding-bottom: 8px;
+	border-bottom: 1px solid white;
+}
+
+#browse .searchform {
+	padding: 10px;
+}
+
+#browse .text, #browse select {
+	width: 160px;
+}
+
+#browse form {
+	margin: 0;
+	padding: 0;
+}
+
+#browse form div {
+	padding-bottom: 8px;
+	width: 165px; 
+}
+
+.CRUD{
+	font-size: large;
+	text-decoration: skyblue;
+	text-align: center;
+	justify-content: space-between;
+	background-image: radial-gradient(red, black);
+	position: relative;
+	margin-bottom: 1px;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	border: 4px solid red;
+}
+
+
+.myButton {
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.myButton:hover {
+	background-color:#b34332;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.yourButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.yourButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.yourButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+#body {
+	float: right;
+	width: 543px;
+	margin: 2px 1px 0 0;
+	
+	border: 1px solid #e5e5e5;
+	position: relative;
+}
+
+#body p {
+	margin: 1em 0;
+	padding: 0;
+}
+
+#body .leftbox,
+#body .rightbox {
+	margin-top: 5px;
+	color: #464646;
+}
+
+
+#body .br {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#body .readmore {
+	margin-top: -0.5em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#body .readmore a {
+	color: #ad1c1c;
+}
+
+#body .readmore a:hover {
+	color: #f73838;
+}
+
+#body h3 {
+	text-align: center;
+	font-family: "Keble Condensed", "KebleCondensed", "arial narrow", helvetica, arial, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #5d5d5d;
+	padding: 0 0 0 18px;
+	margin: 1px 0 3px 0;
+}
+
+#footer {
+	background: #c80000 url(images/footer_bg.gif) repeat-x;
+	padding: 8px 8px 5px 8px;
+	position: relative;
+	text-align: center;
+	border-bottom: 2px solid white;
+}
+	
+#footer, #footer a {
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+#footnav {
+	position: absolute;
+	text-align: right;
+	right: 10px;
+	top: 0px;
+	padding: 8px 0 5px 0;
+}
+
+
+@media only screen and (max-width: 768px){
+    body {
+        background: black;
+	}
+	.wrapper {
+		margin: auto;
+		text-align: left;
+		width: 300px;
+		position: relative;
+	}
+    .logo {
+		background: none;
+		
+	}
+	.imagine{
+		width: 290;
+		height: 175;
+	}
+	#nav {
+		position: absolute;
+		left: 300px;
+		top: 40px;
+		width: 100px;
+	}
+    .menu {
+        margin: 0;
+    }
+    .menu-item {
+        display: block;
+        margin: 0;
+        padding: 15px 40px 15px 40px;
+        border-top: 1px solid #ccc;
+    }
+    .menu-item-active {
+        position: static;
+        margin: 0;
+        padding: 15px 40px 15px 40px;
+    }
+    .footer {
+        margin-top: 3px;
+	}
+	
+	/* Set a style for all buttons */
+	button {
+	  background-color: blue;
+	  color: white;
+	  padding: 5px 5px;
+	  position: center;
+	  margin: 3px 1px;
+	  border: none;
+	  cursor: pointer;
+	  width: 50%;
+	}
+	button:hover {
+	  opacity: 0.5;
+	}
+	.login-box{
+		height: 200px;
+		width: 200px;
+		position: absolute;
+		top: 200%;
+		left: 102%;
+		transform: translate(-50%,-50%);
+		border-style: ridge ;
+		color: red;
+		background-color: black;
+	  }
+	  .login-box h1{
+		float: left;
+		position: left;
+		font-size: 40px;
+		border-bottom: 6px solid blue;
+		margin-bottom: 20px;
+		padding: 13px 0;
+	  }
+	  .textbox{
+		float: right;
+		width: 100%;
+		overflow: hidden;
+		font-size: 20px;
+		padding: 8px 0;
+		margin: 8px 0;
+		border-bottom: 1px solid blue;
+	  }
+	  .textbox i{
+		float: right;
+		width: 20px;
+		float: left;
+		text-align: center;
+	  }
+	  .textbox input{
+		float: right;
+		border: none;
+		outline: none;
+		background: none;
+		color: grey;
+		font-size: 18px;
+		width: 80%;
+		float: left;
+		margin: 0 10px;
+	  }
+	  .fas-fa-user{
+		color:red;
+	  }
+	  .btn{
+		float: right;
+		width: 100%;
+		background: none;
+		border: 2px solid blue;
+		color: grey;
+		padding: 5px;
+		font-size: 18px;
+		cursor: pointer;
+		margin: 12px 0;
+	  }
+	  #body {
+		float: left;
+		width: 275px;
+		margin: 2px 1px 0 0;
+		margin-top: 30px;
+		border: 3px solid #e5e5e5;
+		position: relative;
+	}
+	  .CRUD{
+		font-size: small;
+		text-decoration: skyblue;
+		text-align: center;
+		justify-content: space-between;
+		background-image: radial-gradient(red, black);
+		position: relative;
+		margin-bottom: 1px;
+		margin-right: 1px;
+		display: block;
+		
+	}
+	.myButton {
+		box-shadow:inset 0px 34px 0px -15px #b54b3a;
+		/*background-color:#a73f2d;*/
+		border:1px solid #241d13;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:15px;
+		font-weight:bold;
+		padding:9px 23px;
+		text-decoration:none;
+		text-shadow:0px -1px 0px #7a2a1d;
+		margin-top: 5px;
+
+	}
+	.myButton:hover {
+		background-color:#b34332;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+	
+	.yourButton {
+		position: left;
+		box-shadow: 3px 4px 0px 0px #899599;
+		background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+		background-color:#ededed;
+		border-radius:5px;
+		border:1px solid #d6bcd6;
+		display:inline-block;
+		cursor:pointer;
+		color:#3a8a9e;
+		font-family:Arial;
+		font-size:10px;
+		padding:7px 10px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #e1e2ed;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.yourButton:hover {
+		background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+		background-color:#bab1ba;
+	}
+	.yourButton:active {
+		position:relative;
+		top:1px;
+	}
+	.games {
+		background: black ;
+		margin-top: -10px;
+		margin-bottom: 20px;
+		margin-right: -5px;
+		display: block;
+		width: 260px;
+		justify-content: space-between;
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.leftbox {
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.rightbox {
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.rightrightbox{
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+}
+
+/*pentru tableta*/
+@media only screen and (min-width : 768px) and (max-width: 990px){
+    body {
+		background: url('https://image.freepik.com/free-vector/realistic-dark-tropical-leaves-background_23-2148409315.jpg');
+		background-repeat: repeat;
+	}
+	.wrapper {
+		margin: auto;
+		text-align: left;
+		width: 600px;
+		position: relative;
+	}
+
+	.imagine{
+		width: 600;
+		height: 250;
+	}
+	#nav {
+		position: absolute;
+		left: 500px;
+		top: 40px;
+		width: 100px;
+	}
+    .menu {
+        margin: 0;
+    }
+    .menu-item {
+        display: block;
+        margin: 0;
+        padding: 15px 40px 15px 40px;
+        border-top: 1px solid #ccc;
+    }
+    .menu-item-active {
+        position: static;
+        margin: 0;
+        padding: 15px 40px 15px 40px;
+    }
+    .footer {
+        margin-top: 3px;
+	}
+	
+	/* Set a style for all buttons */
+	button {
+	  background-color: green;
+	  color: white;
+	  padding: 5px 5px;
+	  position: center;
+	  margin: 3px 1px;
+	  border: none;
+	  cursor: pointer;
+	  width: 50%;
+	}
+	button:hover {
+	  opacity: 0.5;
+	}
+	.login-box{
+		height: 250px;
+		width: 250px;
+		position: absolute;
+		top: 170%;
+		left: 105%;
+		transform: translate(-50%,-50%);
+		border-style: 3px ridge ;
+		color: red;
+		background-color: black;
+	  }
+	  .login-box h1{
+		float: left;
+		position: left;
+		font-size: 40px;
+		border-bottom: 6px solid blue;
+		margin-bottom: 20px;
+		padding: 13px 0;
+	  }
+	  .textbox{
+		float: right;
+		width: 100%;
+		overflow: hidden;
+		font-size: 20px;
+		padding: 8px 0;
+		margin: 8px 0;
+		border-bottom: 1px solid blue;
+	  }
+	  .textbox i{
+		float: right;
+		width: 20px;
+		float: left;
+		text-align: center;
+	  }
+	  .textbox input{
+		float: right;
+		border: none;
+		outline: none;
+		background: none;
+		color: grey;
+		font-size: 18px;
+		width: 80%;
+		float: left;
+		margin: 0 10px;
+	  }
+	  .fas-fa-user{
+		color:red;
+	  }
+	  .btn{
+		float: right;
+		width: 100%;
+		background: none;
+		border: 2px solid blue;
+		color: grey;
+		padding: 5px;
+		font-size: 18px;
+		cursor: pointer;
+		margin: 12px 0;
+	  }
+	  #body {
+		float: left;
+		width: 275px;
+		margin: 2px 1px 0 0;
+		margin-top: 30px;
+		border: 3px solid #e5e5e5;
+		position: relative;
+	}
+	.CRUD{
+		font-size: medium;
+		text-decoration: skyblue;
+		text-align: center;
+		margin-top: 0;
+		justify-content: space-between;
+		background-image: radial-gradient(red, black);
+		position: relative;
+		margin-bottom: 1px;
+		margin-right: 1px;
+		display: block;
+		
+	}
+	.myButton {
+		box-shadow:inset 0px 34px 0px -15px #b54b3a;
+		/*background-color:#a73f2d;*/
+		border:1px solid #241d13;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:15px;
+		font-weight:bold;
+		padding:9px 23px;
+		text-decoration:none;
+		text-shadow:0px -1px 0px #7a2a1d;
+		margin-top: 5px;
+
+	}
+	.myButton:hover {
+		background-color:#b34332;
+	}
+	.myButton:active {
+		position:relative;
+		top:1px;
+	}
+	
+	.yourButton {
+		position: left;
+		box-shadow: 3px 4px 0px 0px #899599;
+		background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+		background-color:#ededed;
+		border-radius:5px;
+		border:1px solid #d6bcd6;
+		display:inline-block;
+		cursor:pointer;
+		color:#3a8a9e;
+		font-family:Arial;
+		font-size:10px;
+		padding:7px 10px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #e1e2ed;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.yourButton:hover {
+		background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+		background-color:#bab1ba;
+	}
+	.yourButton:active {
+		position:relative;
+		top:1px;
+	}
+	.games {
+		background: black ;
+		margin-top: -10px;
+		margin-bottom: 20px;
+		margin-right: -5px;
+		display: block;
+		width: 260px;
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.leftbox {
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.rightbox {
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+	
+	.rightrightbox{
+		flex-grow:1;
+		float: left;
+		width: 260px;
+
+		border-left: 4px solid red;
+		border-right: 4px solid red;
+	}
+}
